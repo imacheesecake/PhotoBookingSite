@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<div class="text-center home-hero">
+    <h1 class="display-4">Capture Your Moment</h1>
+    <p class="lead">StudioBookings offers professional photography in a private, fully equipped studio with customizable backdrops and lighting for every style.</p>
+    <div class="mt-4">
+        <a asp-controller="Booking" asp-action="Index" class="btn btn-primary btn-lg me-2">Book a Session</a>
+        <a asp-controller="Home" asp-action="Packages" class="btn btn-outline-dark btn-lg">View Packages</a>
+    </div>
+</div>
+
+<hr class="my-5" />
+
+<section class="services container">
+    <h2 class="section-title text-center mb-5">Our Services</h2>
+
+    <div class="service-row">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Graduation Portraits</h4>
+                <p>Celebrate your achievement with personalized graduation sessions, either in-studio or outdoors.</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Family & Portrait Sessions</h4>
+                <p>We offer both individual and group sessions in a calm, professional setting with beautiful results.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Quinceañeras</h4>
+                <p>We create elegant, vibrant portraits to celebrate your special day — available in-studio or on location.</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Weddings</h4>
+                <p>From engagement shoots to full-day wedding coverage, we document your love story with care and artistry.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Branding & Product Photography</h4>
+                <p>Showcase your business or products with professional imagery tailored to your brand’s aesthetic.</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Special Events</h4>
+                <p>We also cover birthdays, maternity sessions, and other milestone events with packages built to suit your needs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="my-5" />
+
+<section class="text-center">
+    <h2>Fully Equipped Studio</h2>
+    <p>Our studio includes high-end lighting, backdrop color options, and a controlled environment to bring your creative vision to life.</p>
+</section>
+
+<hr class="my-5" />
+
+<section class="contact-section container">
+    <h2 class="section-title text-center mb-4">Contact Us</h2>
+    <p class="text-center mb-4">Have questions? Interested in booking something custom? Reach out below and we’ll respond within 24 hours.</p>
+
+    <form method="post" action="mailto:youremail@example.com" enctype="text/plain" class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" name="Name" required />
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" name="Email" required />
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="Message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</section>

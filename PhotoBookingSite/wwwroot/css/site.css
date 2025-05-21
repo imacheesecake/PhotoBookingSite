@@ -1,0 +1,152 @@
+body {
+    background-color: #f7f7f7;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    color: #222 !important;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 1.5rem;
+    margin-right: 0.3rem;
+}
+
+.nav-link {
+    color: #444 !important;
+}
+
+    .nav-link:hover {
+        color: #000 !important;
+    }
+
+h1, h2, h3 {
+    color: #222;
+}
+
+.btn-primary {
+    background-color: #333;
+    border-color: #333;
+}
+
+    .btn-primary:hover {
+        background-color: #000;
+        border-color: #000;
+    }
+
+.btn-outline-dark {
+    border-color: #555;
+    color: #555;
+}
+
+    .btn-outline-dark:hover {
+        background-color: #555;
+        color: white;
+    }
+
+.home-hero {
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #f0f0f0, #ffffff);
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin-top: 2rem;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #222;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+    .section-title::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: #222;
+        margin: 0.5rem auto 0;
+        border-radius: 2px;
+    }
+
+.service-row {
+    border-top: 1px solid #333;
+    padding: 2rem 0;
+}
+
+    .service-row:first-of-type {
+        border-top: none;
+    }
+
+.services h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+.services p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-section {
+    padding: 3rem 0;
+}
+
+    .contact-section .form-label {
+        font-weight: 500;
+        color: #222;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .contact-section button {
+        background-color: #333;
+        border-color: #333;
+    }
+
+        .contact-section button:hover {
+            background-color: #000;
+            border-color: #000;
+        }
+.card-title {
+    font-weight: 600;
+    color: #111;
+}
+
+.card ul {
+    padding-left: 1rem;
+    list-style-type: disc;
+}
+
+.card-body h5 {
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+}

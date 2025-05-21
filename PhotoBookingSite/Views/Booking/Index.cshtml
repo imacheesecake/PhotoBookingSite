@@ -1,0 +1,74 @@
+﻿@model PhotoBookingSite.Models.Booking
+
+@{
+    ViewData["Title"] = "Book a Session";
+}
+
+<h2>Book a Session</h2>
+
+<form asp-action="Index" method="post" class="booking-form">
+    <div class="form-group">
+        <label asp-for="ClientName"></label>
+        <input asp-for="ClientName" class="form-control" />
+        <span asp-validation-for="ClientName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Date"></label>
+        <input asp-for="Date" type="datetime-local" class="form-control" />
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Package"></label>
+        <select asp-for="Package" class="form-control">
+            <option value="">-- Select a Package --</option>
+            <option>Mini Session</option>
+            <option>Standard Session</option>
+            <option>Deluxe Portraits</option>
+            <option>Essential Quince</option>
+            <option>Ultimate Quince Experience</option>
+            <option>Ceremony Only (Wedding)</option>
+            <option>Full Day Coverage (Wedding)</option>
+        </select>
+
+        <small class="form-text text-muted">
+            Not sure which package to choose? <a href="/Home/Packages">View details here</a>.
+        </small>
+
+        <span asp-validation-for="Package" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="BackdropColor"></label>
+        <select asp-for="BackdropColor" class="form-control">
+            <option value="">-- Select a Backdrop --</option>
+            <option>White</option>
+            <option>Black</option>
+            <option>Gray</option>
+            <option>Pink</option>
+            <option>Blue</option>
+            <option>Green</option>
+            <option>Custom</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Notes"></label>
+        <textarea asp-for="Notes" class="form-control"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Book Now</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
